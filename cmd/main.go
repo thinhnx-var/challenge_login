@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/thinhnx-var/challenge_login/service/router"
+)
 
 func main() {
-	fmt.Println("Hello, ThinhNX")
+	host := "127.0.0.1:8088"
+	router.StartH2CServer(host)
 }
